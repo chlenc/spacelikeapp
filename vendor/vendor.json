@@ -1,0 +1,14 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "qAw1/0fV6y4+VuWKcIkA0aRb0bY=",
+			"origin": "likeApp/vendor/github.com/ahmdrz/goinsta",
+			"path": "github.com/ahmdrz/goinsta",
+			"revision": "aa250bb4ac58404c96a82f1590ae46eb89c42229",
+			"revisionTime": "2018-11-21T05:38:46Z"
+		}
+	],
+	"rootPath": "likeApp"
+}

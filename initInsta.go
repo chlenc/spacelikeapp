@@ -1,7 +1,7 @@
 package main
 
 import (
-	"./goinsta"
+	"github.com/ahmdrz/goinsta"
 	"github.com/gin-gonic/gin"
 )
 

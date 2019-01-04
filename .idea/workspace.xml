@@ -1,7 +1,235 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4936ab13-e226-4ab0-86d4-ba34f2a6655c" name="Default Changelist" comment="" />
+    <list default="true" id="4936ab13-e226-4ab0-86d4-ba34f2a6655c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Gopkg.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/account.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/activity.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/comments.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/contacts.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/changePass.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/followers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/following.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/liked.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/removeProfilePic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/setPrivate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/setPublic.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/setbiography.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/account/stories.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/activity/following.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/activity/recent.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/contacts/sync.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/export.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/goinstaExamples.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/inbox/conversation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/inbox/newconversation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/inbox/next.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/inbox/sms.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/inbox/sync.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/commentsAdd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/commentsDelByID.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/commentsDelMine.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/commentsDisable.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/commentsEnable.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/commentsSync.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/deleteStories.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/hashtagMedia.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/hashtagStories.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/hashtags.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/itemDownload.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/like.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/likeAll.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/mediaDelete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/media/unlike.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/search/searchFacebook.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/search/searchLocation.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/search/searchTag.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/search/searchUser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/timeline/stories.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/timeline/timeline.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/block.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/feed.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/feedlikers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/follow.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/followers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/following.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/friendship.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/highlights.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/seeunfollowers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/stories.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/tags.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/unblock.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/unfollow.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/unfolloweveryone.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/userById.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/examples/user/userByName.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/feeds.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/generator.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/feed/media.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/feed/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/followers/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/following/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/info/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/account/stories/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/logout/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/search/facebook/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/search/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/search/tags/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/search/user/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/timeline/feed/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/timeline/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/timeline/stories/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/block/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/feed/media.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/feed/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/follow/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/followers/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/following/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/highlights/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/info/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/stories/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/unblock/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/cmd/user/unfollow/root.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/goinsta/main.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/hashtags.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/inbox.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/media.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/profiles.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/request.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/search.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/timeline.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/users.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/utils.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/goinsta/utils/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/initInsta.go" beforeDir="false" afterPath="$PROJECT_DIR$/initInsta.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/clone.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/clone.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/equal.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/equal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/extensions.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/extensions.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/lib.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/lib.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/message_set.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/message_set.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/pointer_reflect.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/pointer_reflect.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/pointer_unsafe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/properties.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/properties.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/text.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/text.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/text_parser.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/golang/protobuf/proto/text_parser.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_adapter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_bool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_float.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_int32.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_int64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_invalid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_nil.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_number.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_object.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_uint32.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_any_uint64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_config.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_float.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_int.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_object.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_skip.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_skip_sloppy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_skip_strict.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_iter_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_json_number.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_pool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_extension.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_native.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_object.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_slice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_reflect_struct_decoder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_stream.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_stream_float.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_stream_int.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/feature_stream_string.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/skip_tests/array/skip_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/skip_tests/object/skip_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/skip_tests/string/skip_test.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/json-iterator/go/test.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-isatty/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/mattn/go-isatty/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-isatty/isatty_linux.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/mattn/go-isatty/isatty_linux.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/mattn/go-isatty/isatty_others.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/mattn/go-isatty/isatty_others.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/0doc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/0doc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/binc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/binc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/cbor.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/cbor.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/decode_go.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/decode_go14.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.not.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/fast-path.not.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-dec-array.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-dec-array.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-dec-map.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-dec-map.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.go.tmpl" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen-helper.go.tmpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.generated.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.generated.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen_15.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen_16.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/gen_17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_internal.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_internal.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_not_unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_not_unsafe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_unsafe.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/helper_unsafe.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/json.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/json.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/msgpack.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/msgpack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/noop.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/prebuild.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/prebuild.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/rpc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/rpc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/simple.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/simple.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/tests.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/ugorji/go/codec/time.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/go-playground/validator.v8/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/go-playground/validator.v8/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/apic.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/apic.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/decode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/decode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/emitterc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/emitterc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/encode.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/encode.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/parserc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/parserc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/readerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/readerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/resolve.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/resolve.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/scannerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/scannerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/sorter.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/sorter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/writerc.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/writerc.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yaml.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yaml.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yamlh.go" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/gopkg.in/yaml.v2/yamlh.go" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,54 +246,47 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="go" value="6" />
+          <entry key="go" value="8" />
           <entry key="lock" value="1" />
           <entry key="toml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Go" value="6" />
+          <entry key="Go" value="8" />
           <entry key="PLAIN_TEXT" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="go" value="4" />
-          <entry key="toml" value="16" />
+          <entry key="go" value="11" />
+          <entry key="toml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Go" value="4" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="Go" value="11" />
+          <entry key="PLAIN_TEXT" value="17" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/initInsta.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
-              <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/goinsta/types.go">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-631" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gopkg.toml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="99">
+              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -74,7 +295,7 @@
         <entry file="file://$PROJECT_DIR$/Gopkg.lock">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="15">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -88,8 +309,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Gopkg.toml" />
         <option value="$PROJECT_DIR$/Gopkg.lock" />
+        <option value="$PROJECT_DIR$/Gopkg.toml" />
         <option value="$PROJECT_DIR$/initInsta.go" />
       </list>
     </option>
@@ -116,6 +337,11 @@
             <path>
               <item name="likeApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="likeApp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="likeApp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="likeApp" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="likeApp" type="b2602c69:ProjectViewProjectNode" />
@@ -171,7 +397,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.33614457" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -201,35 +427,37 @@
     <entry file="file://$PROJECT_DIR$/goinsta/utils/util.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/github.com/ahmdrz/goinsta/types.go">
+    <entry file="file://$PROJECT_DIR$/goinsta/types.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-649" />
+        <state relative-caret-position="-631" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gopkg.lock">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Gopkg.toml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="99">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/github.com/ahmdrz/goinsta/types.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="76" column="1" lean-forward="true" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/initInsta.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
-          <caret line="3" column="11" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goinsta/types.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-631" />
       </provider>
     </entry>
   </component>
