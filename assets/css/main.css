@@ -1,0 +1,18 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 30px;
+    background: url('https://pbs.twimg.com/media/Dn0dr7kWkAEqQ4d.jpg') no-repeat center center fixed;
+    background-size: cover
+}
+
+.work-field {
+    border-radius: 4px;
+    padding: 2rem;
+    background: rgba(27, 31, 34, 0.85);
+    color: #fff;
+    margin: 50px 0;
+}

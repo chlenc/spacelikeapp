@@ -1,0 +1,39 @@
+{{template "header.html" .}}
+<div class="container">
+    <div style=" margin: auto; " class="row">
+        <div class="col"></div>
+        <div class="col-md work-field text-center">
+            <h1>👨🏻‍🚀</h1>
+            <h2>Вы уже вошли</h2>
+            <p>Но вы можете выйти и войти еще раз</p>
+            <br>
+            <div>
+                <a class="btn btn-outline-light btn-lg" href="/logout" >Выйти 🚀</a>
+                {{/*<a class="btn btn-outline-light btn-lg" href="/logout" >Заправка 🛰</a>*/}}
+            </div>
+            <pre id="output"></pre>
+        </div>
+        <div class="col"></div>
+    </div>
+</div>
+<script>
+    // url = 'ws://localhost:8080/ws';
+    // c = new WebSocket(url);
+    //
+    // send = function(data){
+    //     $("#output").append((new Date())+ " ==> "+data+"\n")
+    //     c.send(data)
+    // }
+    //
+    // c.onmessage = function(msg){
+    //     $("#output").append((new Date())+ " <== "+msg.data+"\n")
+    //     console.log(msg)
+    // }
+    //
+    // c.onopen = function(){
+    //     setInterval(
+    //             function(){ send("ping") }
+    //             , 1000 )
+    // }
+</script>
+{{template "footer.html" .}}

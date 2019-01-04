@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>🚀Spaceship🚀</title>
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADYAAAA2CAAAAACpLjUBAAAA90lEQVRIx2NgGAWjYBgCHl93ZUbStfn9////qiDJ2iYCtf1/K0yqtif/ydHH9v8/Ofrk/5Olz/c/Wfr64dr+v9cmNUSgYLujLBcxcVgxd+7s2TOm7jqDAKeWFbqq8jPh0aR85ifElutnMMGpBf6mIlitjv2PD2gxzPr/d4YquiZ+w1l4te1ikAZRE9FjzH89Xm3HGcRB1GoSHanG0PT//wFLTL/p47ctLFCFDXtYHgXJf8wOikYFIWpseOPNNTo6MjL+OrIlVyvN+UhMJVvtpFlJTpMftWieA8jMb2TmbjLLEnJLLlA5eV2QnFJZhZFhFIyCUUAAAAAsgXoSXJjphAAAAABJRU5ErkJggg=="
+          rel="icon" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+{{/*<script src="/assets/js/popper.min.js"></script>*/}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
+
+        body {
+            margin-bottom: 30px;
+            background: url('/assets/images/bg.jpg') no-repeat center center fixed;
+            background-size: cover
+        }
+
+        .work-field {
+            border-radius: 4px;
+            padding: 2rem;
+            background: rgba(27, 31, 34, 0.85);
+            color: #fff;
+            margin: 50px 0;
+        }
+    </style>
+
+</head>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="http://spaceshipdev.ru"><img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAAA4VBMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////+sqgLzAAAASnRSTlMAAQIFBgoMDg8RExQXGx0fIyQlJiorLzE1Nzk+QUVHTU5PUVJUVllbXV9rcXh5go+RlZiam52gpquvtbe6wMXHyszV1+Tt7/H5/SHFrvcAAADcSURBVDjL7ZRFEsJQEEQHCO7uBA/u7iFo3/9ALHCpZBbs4K1f9a+xT/SHgUlMeXQcMQ1gbWWILQDY2rTFDXimAPBMN5imCKbZvInYBbVruTBNuIyfe1rr93u9Tnsm31kNq0mfRf+keeTDOUmR31kNMhH7Jb4ENQLUxbHjI7KEu6rijJwA0CJ3ZqwqLskBACPNp/3UAOYxIqKQemIh6xWudS8AYF/JSc/k/cJLH5OSVCyWlcegdT1q1pzMJO40MGa9D3xle9j7yN5w9s3wrzANQOHctUlMeVk/xW9xAnZDciRvVlkoAAAAAElFTkSuQmCC"></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="nav navbar-nav mr-auto">
+            <li class="nav-item active"><a class="nav-link" href="/likes">Лайки <span class="sr-only"></span></a></li>
+        {{/*<li class="nav-item"><a class="nav-link" href="#">Link</a></li>*/}}
+        {{/*<li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>*/}}
+        </ul>
+    {{if .IsLogin}}
+        <a class="btn btn-light my-2 my-sm-0" href="/logout">Выйти</a>
+    {{else }}
+        <a class="btn btn-light my-2 my-sm-0" href="/">Авторизация</a>
+        <ul></ul>
+        <a class="btn btn-outline-light my-2 my-sm-0" href="/registration">Регистрация</a>
+     {{end}}
+    </div>
+</nav>
+

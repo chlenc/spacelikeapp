@@ -1,0 +1,168 @@
+{{template "header.html" .}}
+
+<div class="container">
+    <div style=" margin: auto; " class="row">
+        <div class="col"></div>
+        <div class="col-md work-field">
+            <h4>Пролайкай стену</h4>
+            <div class="alert alert-success" id="ready" role="alert">
+                Готово!
+            </div>
+            <div class="alert alert-primary" id="spamInfo" role="alert">
+                Эта проблема возникла из-за подозрительной активности аккаунта.
+                Для ее решения необходимо <strong>c web версии</strong> нажать <strong>"Редактировать профиль"</strong>
+                и выбрать <strong>"Временно заблокировать мой аккаунт"</strong> по причине <strong>"Просто нужен перерыв"</strong>.
+                Спустя пару часов войдите в свой аккаунт, проблема будет решена.
+            </div>
+            <form>
+                <div class="form-group">
+                    <label>Username</label>
+                    <input class="form-control {{if .IsError}} is-invalid{{end}}" id="Username"
+                           placeholder="Ваш Username" required>
+                    <div id="login-msg" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" class="form-control {{if .IsError}} is-invalid{{end}}"
+                           id="Password" placeholder="Ваш пароль" required>
+                    <div id="pass-msg" class="invalid-feedback"></div>
+                </div>
+                <div class="form-group">
+                    <label>Username цели</label>
+                    <input class="form-control {{if .IsError}} is-invalid{{end}}" id="Target"
+                           placeholder="Username цели" required>
+                    <div id="target-msg" class="invalid-feedback"></div>
+                </div>
+
+                <div class="progress">
+                    <div id="progressbar" class="progress-bar progress-bar-striped progress-bar-animated"
+                         role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0"
+                         aria-valuemax="100">0%
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button type="button" class="btn btn-light" id="likes-btn">Пролайкать</button>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('.alert').hide()
+        $('.progress').hide()
+
+        $('.alert').click(function () {
+          $(this).hide()
+        })
+        $("#likes-btn").click(function () {
+            try {
+                $('#likes-btn').hide()
+                var login = $('#Username');
+                var password = $('#Password');
+                var target = $('#Target');
+                $('#login-msg').text("");
+                $('#pass-msg').text("");
+                $('#target-msg').text("");
+                var ok = true
+                if (login.val() == "") {
+                    login.addClass("is-invalid").removeClass("is-valid");
+                    ok = false;
+                } else {
+                    login.addClass("is-valid").removeClass("is-invalid");
+                }
+
+                if (password.val() == "") {
+                    password.addClass("is-invalid").removeClass("is-valid");
+                    ok = false;
+                } else {
+                    password.addClass("is-valid").removeClass("is-invalid");
+                }
+
+                if (target.val() == "") {
+                    target.addClass("is-invalid").removeClass("is-valid");
+                    ok = false;
+                } else {
+                    target.addClass("is-valid").removeClass("is-invalid");
+                }
+
+                if (ok) {
+                    $('#progressbar').attr('aria-valuenow', 0).css('width', 0 + '%').text("");
+                    $('.progress').show()
+
+                    var state = 0
+                    var timer = setInterval(function () {
+                        if (state < 100) {
+                            state += 4;
+                            $('#progressbar').attr('aria-valuenow', state).css('width', state + '%').text(state + "%");
+                        }
+                    }, 1000);
+
+                    setTimeout(function () {
+                        clearInterval(timer);
+                    }, 25000);
+
+                    $.ajax({
+                        url: "/likes",
+                        method: "POST",
+                        data: {
+                            login: login.val(),
+                            password: password.val(),
+                            target: target.val()
+                        },
+                        success: function (data) {
+                            // data = JSON.parse(data)
+                            if (data['IsError'] === true) {
+                                if (data['error'] === 'fail: The password you entered is incorrect. Please try again. (bad_password)') {
+                                    login.addClass("is-invalid").removeClass("is-valid");
+                                    password.addClass("is-invalid").removeClass("is-valid");
+                                    $('#pass-msg').text('Неверный логин или пароль');
+                                }
+                                else if (data['error'] === 'fail: challenge_required (checkpoint_challenge_required)') {
+
+                                    login.addClass("is-invalid").removeClass("is-valid");
+                                    password.addClass("is-invalid").removeClass("is-valid");
+                                    $('#login-msg').html("С этого аккаунта действие невозможно <a href=\"#\" class=\"alert-link\" onclick=\"$(\'#spamInfo\').show()\">Как исправить?</a>")//.append("<a href='#'>Как исправить?</a>");
+                                } else {
+                                    login.addClass("is-invalid").removeClass("is-valid");
+                                    password.addClass("is-invalid").removeClass("is-valid");
+                                    target.addClass("is-invalid").removeClass("is-valid");
+                                    $('#target-msg').text(data['error']);
+                                }
+                                $('.progress').hide()
+                                $('#likes-btn').show()
+                                clearInterval(timer);
+                            } else {
+                                $('#ready').show()
+                                $('.progress').hide()
+                                $('#likes-btn').show()
+                                $('form')[0].reset()
+                                clearInterval(timer);
+                                setTimeout(function () {
+                                    $('#ready').hide();
+                                }, 2000)
+                            }
+                        },
+                    });
+
+                } else {
+                    $('.progress').hide()
+                    $('#likes-btn').show()
+                }
+
+
+            } catch (e) {
+                alert(JSON.stringify(e))
+                $('.progress').hide()
+                $('#likes-btn').show()
+            }
+        });
+    });
+
+</script>
+
+{{template "footer.html" .}}

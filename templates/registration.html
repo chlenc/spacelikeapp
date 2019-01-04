@@ -1,0 +1,147 @@
+{{template "header.html" .}}
+
+
+<div class="container">
+    <div style=" margin: auto; " class="row">
+        <div class="col"></div>
+        <div class="col-lg-8 work-field">
+        {{if .IsError}}
+            <div class="alert alert-danger" role="alert">
+            {{ .ErrorMessage}}
+            </div>
+        {{end}}
+            <form id="register_form" action="/registration" method="POST">
+
+                <div class="form-row ">
+                    <div class="form-group col">
+                        <label>Имя</label>
+                        <input type="text" class="form-control" placeholder="Имя" name="FirstName" required>
+                    </div>
+                    <div class="form-group col">
+                        <label>Фамилия</label>
+                        <input type="text" class="form-control" placeholder="Фамилия" name="LastName" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Username</label>
+                    <div class="input-group ">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                        </div>
+                        <input type="text" class="form-control" id="Username" name="Username" pattern="^[0-9a-zA-Z]+$"
+                               placeholder="Username" required>
+                        <div id="bad-username" class="invalid-feedback">
+                            Username уже используется!
+                        </div>
+                        <div class="valid-feedback">
+                            Username свободен!
+                        </div>
+                    </div>
+                    <small class="form-text text-muted">Username должен содержать только буквы и цифры.</small>
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Введите email" required>
+                </div>
+
+                <div class="form-group"><label for="password">Пароль</label>
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <input type="password" class="form-control pass_field"
+                                   name="Password1" id="Password1" placeholder="Пароль" required>
+                            <div class="invalid-feedback">
+                                Пароли не совавпадают!
+                            </div>
+                        </div>
+                        <div class="form-group col">
+                            <input type="password" class="form-control pass_field"
+                                   name="Password2" id="Password2" placeholder="Повторите пароль" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <button id="registration-btn" type="submit" class="btn btn-light">Регистрация</button>
+                    <a href="/" class="btn btn-outline-light">Войти</a>
+                </div>
+
+            </form>
+        </div>
+        <div class="col"></div>
+
+    </div>
+</div>
+
+
+<script>
+    $(document).ready(function () {
+
+        $("#registration-btn").click(function () {
+            if (checkPasswords() && checkUsername()) {
+                $("#register_form").submit()
+            }
+        })
+
+        $(".pass_field").change(function () {
+            checkPasswords()
+        });
+        $("#Username").change(function () {
+            checkUsername()
+        });
+    });
+
+    function checkUsername() {
+        try {
+            var usernameField = $("#Username")
+            var username = usernameField.val()
+            var reg = /^[\w\dА-я]+$/;
+            if (!reg.test(username)) {
+                $("#bad-username").html("Username должен содержать только буквы и цифры.")
+                usernameField.addClass("is-invalid").removeClass("is-valid")
+                return
+            } else {
+                usernameField.removeClass("is-invalid")
+            }
+
+            $.ajax({
+                url: "/checkUsername",
+                method: "POST",
+                data: {
+                    Username: username,
+                },
+                success: function (data) {
+                    // data = JSON.parse(data)
+                    if (data.success) {
+                        usernameField.addClass("is-valid").removeClass("is-invalid")
+                    } else {
+                        $("#bad-username").html("Username уже используется!")
+                        usernameField.addClass("is-invalid").removeClass("is-valid")
+                    }
+                },
+            });
+            return usernameField.hasClass("is-valid")
+        } catch (e) {
+            alert(e)
+        }
+    }
+
+    function checkPasswords() {
+        var flag = false
+        var p1 = $("#Password1")
+        var p2 = $("#Password2")
+        if ((p1.val() != p2.val()) || (p1.val() == "" && p2.val() == "")) {
+            p1.addClass("is-invalid").removeClass("is-valid")
+            p2.addClass("is-invalid").removeClass("is-valid")
+        } else {
+            flag = true
+            p1.addClass("is-valid").removeClass("is-invalid")
+            p2.addClass("is-valid").removeClass("is-invalid")
+        }
+        return flag
+    }
+
+</script>
+
+{{template "footer.html" .}}
